@@ -72,33 +72,87 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
     }
 
     21. How do we select a p element with a single class of “human””?
-    - .human {
-        
+    - p.human{
+
     }
     
     22. What is a parent child selector? When would this be useful? 
+    -Its when you use multiple elements to specify which element/s you want to select. 
+    Example: div p{
+
+    }
+
     23. How do you select all links within a div with the class of sidebar?
+    - .sidebar a{
+
+    }    
+    
     24. What is a pseudo selector?
+    -It does something to an item once its been interacted with.
+    
     25. What do we use the change the spacing between lines?
+    -Using the line-height property in CSS.
+
     26. What do we use to change the spacing between letters?
+    -Using the letter-spacing property in CSS.
+    
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    -text-transform: uppercase;, text-transform: lowercase;, text-transform: capitalize; 
+    
     28. How do I add a 1px border around my div that is dotted and black?
+    - border: 1px dotted black;
+    
     29. How do I select everything on the page? 
+    -"*".
+    
     30. How do I write a comment in CSS?
+    - /* this is an example of a comment */
+    
     31. How do I find out what file I am in, when I am using the command line? 
+    -pwd
+    
     32. Using the command line - how do I see a list of files/folders in my current folder?
+    -ls
+    
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    - git rm -r fileName; you have to be careful with this because it deletes the file/folder and everything inside it. 
+    
     34. Why should I use version control? 
+    -Because it allows you to keep track of all previous versions of the file/s, which allows you to revert back to any of them or just keep records of what happened when.
+    
     35. How often should I commit to github?
+    -Every 20 mins or when a task is completed, whichever comes first.
+    
     36. What is the command we would use to push our repo up to github? 
-    37. Walk me through Lambda's git flow. 
+    -git push -u origin branchName
+    
+    37. Walk me through Lambda's git flow.
+        -Fork file from gitHub 
+        cd into the location where you want the fork cloned 
+        clone in CLI using the https link: git clone https link 
+        cd into the newly created repo
+        make a new branch: git checkout -b fileName 
+        open code in VSCode: code . 
+        add changes: git add . 
+        commit: git commit -m "comment describing what you changed"
+        push file to gitHub: git push -u origin branchName
+        pull request on gitHub
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    -inline element only takes up the space that it does, while a block element starts on a new line and takes up the whole width of the page.
+
+    2. What happens when an element is positioned absolutely?
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+    -display: inline-block;
+
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default:
+    -display block by default: <p>, <div>, <section>
+    -display inline by default: <span>, <a>
+    -display inline-block by default:  
+    
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
 
 
